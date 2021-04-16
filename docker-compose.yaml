@@ -1,0 +1,8 @@
+version: '2'
+services:
+  hpool:
+    image: hpool:v1.0.4.1
+    volumes:
+      - './config.yaml:/app/config.yaml'
+    container_name: hpool
+    restart: always
